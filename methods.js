@@ -56,3 +56,13 @@ console.log('fruitItemsArray Remove first and last items: ', fruitItemsArray) //
 //? გამოიტანეთ ეკრანზე, თუ რამდენი ელემენტი დარჩა მასივში;
 console.log('number of elements is: ', fruitItemsArray.length) //^ number of elements is:  5
 
+
+
+//! #TASK-3:  --------------------------- მოცემულია მასივი let array =[1, 2, 3, 4, 5]. 
+//! Splice მეთოდის საშუალებით მიიღეთ: [1, 2, 3, 'a', 'b', 'c', 4, 5]
+
+const addAlphaArray = [1, 2, 3, 4, 5];
+
+addAlphaArray.splice(3, 0, 'a', 'b', 'c');
+console.log('Add three letters of alphabet: ', addAlphaArray); //^ Add three letters of alphabet:  [ 1,   2,   3, 'a', 'b', 'c', 4, 5 ]
+
