@@ -57,7 +57,6 @@ console.log('fruitItemsArray Remove first and last items: ', fruitItemsArray) //
 console.log('number of elements is: ', fruitItemsArray.length) //^ output: number of elements is:  5
 
 
-
 //! #TASK-3:  --------------------------- მოცემულია მასივი let array =[1, 2, 3, 4, 5]. 
 const addAlphaArray = [1, 2, 3, 4, 5];
 
@@ -90,3 +89,8 @@ const newDivision = divideArray.map(number =>
 
 console.log(newDivision);  //^ output: [ 4, '25 არ იყოფა სამზე', 1, 2, '8 არ იყოფა სამზე', '14 არ იყოფა სამზე', '7 არ იყოფა სამზე', '23 არ იყოფა სამზე']
 
+//! #TASK-6:  ---------------------------   მოცემულია მასივი: Let array=[2,15,10,24];
+const removeNumArray = [2,15,10,24];
+removeNumArray.splice(2,1)  //? წაშალეთ ამ მასივიდან რიცხვი 10;
+
+console.log('array after removing 10: ',removeNumArray); //^ output: array after removing 10:  [ 2, 15, 24 ]
