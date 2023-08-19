@@ -1,11 +1,8 @@
-function measureNumber(num1, num2) {
-    console.log(
-        num1 > num2 ? `${num1} is the largest` :     //? თუ პირველი რიცხვი მეტია მეორეზე დაიბეჭდოს - num1 is the largest;
-        num1 < num2 ? `${num2} is the largest` :     //? თუ მეორე რიცხვი მეტია პირველზე - დაიბეჭდოს num2 is the largest;
-        'error'                                      //? ყველა სხვა დანარჩენ შემთხვევაში დაიბეჭდოს - error; 
-    );
-}
+const divideArray = [12, 25, 3, 6, 8, 14, 7, 23];
 
-measureNumber(31, 8);
-measureNumber(8, 22);
-measureNumber('not a number')
+//? map-ის გამოყენებით შექმენით ახალი მასივი, რომელშიც array მასივიდან თითოეული ელემენტი იქნება 3-ზე გაყოფილი
+const newDivision = divideArray.map(number =>
+  number % 3 === 0 ? number / 3 : `${number} არ იყოფა სამზე`
+);
+
+console.log(newDivision);

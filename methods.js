@@ -65,7 +65,7 @@ addAlphaArray.splice(3, 0, 'a', 'b', 'c'); //? Splice მეთოდის ს�
 console.log('Add three letters of alphabet: ', addAlphaArray); //^output: Add three letters of alphabet:  [ 1,   2,   3, 'a', 'b', 'c', 4, 5 ]
 
 
-//! #TASK-4: დაწერეთ ფუნქცია, რომელსაც პარამეტრად გადაეცემა ორი რიცხვი(ნებისმიერი ჩაწერეთ) და რომელიც შეასრულებს შემდეგ ლოგიკას:
+//! #TASK-4:  ---------------------------  დაწერეთ ფუნქცია, რომელსაც პარამეტრად გადაეცემა ორი რიცხვი(ნებისმიერი ჩაწერეთ) და რომელიც შეასრულებს შემდეგ ლოგიკას:
 
 function measureNumber(num1, num2) {
     console.log(
@@ -78,3 +78,15 @@ function measureNumber(num1, num2) {
 measureNumber(31, 8); //^ output: 31 is the largest
 measureNumber(8, 22); //^ output: 22 is the largest
 measureNumber('not a number') //^ output: error
+
+
+//! #TASK-5:  ---------------------------  მოცემულია მასივი: let array = [12, 25, 3, 6, 8, 14, 7, 23];
+const divideArray = [12, 25, 3, 6, 8, 14, 7, 23];
+
+//? map-ის გამოყენებით შექმენით ახალი მასივი, რომელშიც array მასივიდან თითოეული ელემენტი იქნება 3-ზე გაყოფილი
+const newDivision = divideArray.map(number =>
+  number % 3 === 0 ? number / 3 : `${number} არ იყოფა სამზე`
+);
+
+console.log(newDivision);  //^ output: [ 4, '25 არ იყოფა სამზე', 1, 2, '8 არ იყოფა სამზე', '14 არ იყოფა სამზე', '7 არ იყოფა სამზე', '23 არ იყოფა სამზე']
+
